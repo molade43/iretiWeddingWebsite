@@ -1,0 +1,407 @@
+@mixin container {
+  max-width: 1140px;
+}
+
+@mixin image {
+  width: 100%;
+}
+* {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: rgba(28, 54, 83, 0.6);
+  -webkit-text-size-adjust: 100%;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+
+  .hero {
+    min-height: 100vh;
+    background: url(./images/kiss.png) center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    // position: relative;
+
+    h2 {
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      font-size: 5vw;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      background: none;
+      span {
+        background: none;
+        font-size: 5vw;
+        color: #fff;
+      }
+    }
+  }
+
+  .invitation {
+    margin-top: 5%;
+    text-align: center;
+    padding: 0 15px;
+    h3 {
+      color: #3d4351;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      line-height: 29px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 29px;
+      color: rgba(28, 54, 83, 0.6);
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .intro {
+    margin-top: 5%;
+    padding: 0 15px;
+    .intro_container {
+      @include container;
+      width: 100%;
+      margin: 0 auto;
+
+      h3 {
+        text-align: center;
+        color: #3d4351;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 29px;
+        padding-bottom: 30px;
+      }
+
+      .intro_image_text_image {
+        display: flex;
+        justify-content: space-around;
+
+        .bride_groom_image {
+          max-width: 25%;
+          text-align: center;
+        }
+        .how_we_met_story {
+          max-width: 50%;
+          text-align: start;
+          p {
+            font-size: 15px;
+            line-height: 29px;
+            color: rgba(28, 54, 83, 0.6);
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .events {
+    margin-top: 5%;
+    padding: 0 15px;
+    .events_container {
+      @include container;
+      width: 100%;
+      margin: 0 auto;
+
+      h3 {
+        text-align: center;
+        color: #3d4351;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 29px;
+        padding-bottom: 30px;
+      }
+      .event_row {
+        display: flex;
+        flex-wrap: wrap;
+
+        .event_date {
+          width: 50%;
+
+          p {
+            font-size: 15px;
+            line-height: 29px;
+            color: rgba(28, 54, 83, 0.6);
+            padding-bottom: 20px;
+          }
+
+          h5 {
+            font-size: 15px;
+            color: #3d4351;
+            text-transform: uppercase;
+            font-weight: 500;
+          }
+
+          p {
+            font-size: 15px;
+            line-height: 29px;
+            color: rgba(28, 54, 83, 0.6);
+            padding-bottom: 20px;
+          }
+        }
+
+        .church {
+          padding-right: 100px;
+          border-right: solid 1px #e6e9ea;
+        }
+
+        .traditional {
+          padding-left: 100px;
+        }
+      }
+      .dressCode_asoebi {
+        .btn {
+          max-width: 17%;
+          margin: 0 auto;
+          text-align: center;
+
+          a {
+            padding: 8px 30px;
+            font-size: 13px;
+            border: solid 2px;
+            border-radius: 40px;
+            display: inline-block;
+            text-transform: uppercase;
+          }
+        }
+        .small {
+          margin-top: 70px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .engagement {
+    margin-top: 5%;
+    padding: 0 15px;
+    .engagementBx {
+      @include container;
+      width: 100%;
+      margin: 0 auto;
+
+      h3 {
+        text-align: center;
+        color: #3d4351;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 29px;
+        padding-bottom: 30px;
+      }
+
+      .engagementImageBx {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .picture {
+          width: 400px;
+
+          img {
+            width: 100%;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .BridesmaidGroomsmen {
+    margin-top: 10%;
+    padding: 0 10px;
+    .bridesmaidBx {
+      @include container;
+      width: 100%;
+      margin: 0 auto;
+
+      h3 {
+        text-align: center;
+        color: #3d4351;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 29px;
+        padding-bottom: 30px;
+      }
+
+      .BridesmaidsImageBx {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .BridesmaidsImageText {
+          width: 400px;
+          text-align: center;
+
+          img {
+            width: 100%;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+
+    .groomsmenBx {
+      @include container;
+      width: 100%;
+      margin: 0 auto;
+
+      h3 {
+        text-align: center;
+        color: #3d4351;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 29px;
+        padding-bottom: 30px;
+      }
+
+      .groomsmenImageBx {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .groomsmenImageText {
+          width: 400px;
+          text-align: center;
+
+          img {
+            width: 100%;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .map {
+    margin-top: 5%;
+    padding: 0 15px;
+    .mapBx {
+      @include container;
+      width: 100%;
+      margin: 0 auto;
+
+      h3 {
+        text-align: center;
+        color: #3d4351;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 29px;
+        padding-bottom: 10px;
+      }
+      p {
+        text-align: center;
+        font-size: 15px;
+        line-height: 29px;
+        color: rgba(28, 54, 83, 0.6);
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  .gift {
+    margin-top: 5%;
+    padding: 0 15px;
+    .giftBx {
+      @include container;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+
+      h3 {
+        text-align: center;
+        color: #3d4351;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 29px;
+        padding-bottom: 10px;
+      }
+      p {
+        text-align: center;
+        font-size: 15px;
+        line-height: 29px;
+        color: rgba(28, 54, 83, 0.6);
+        padding-bottom: 20px;
+      }
+      b {
+        text-align: center;
+      }
+
+      .giftImage {
+        width: 200px;
+        margin: 0 auto;
+
+        img {
+          width: 100%;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .events {
+    .events_container {
+      max-width: 700px;
+
+      .event_row {
+        display: flex;
+        flex-direction: column;
+
+        .event_date {
+          width: 100%;
+        }
+
+        .church {
+          padding-right: 0;
+          padding-bottom: 10px;
+          border-right: none;
+        }
+
+        .traditional {
+          padding-left: 0;
+          padding-top: 10px;
+        }
+      }
+
+      .dressCode_asoebi {
+        .btn {
+          max-width: 28%;
+          margin: 0 auto;
+          text-align: center;
+        }
+        .small {
+          margin-top: 70px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

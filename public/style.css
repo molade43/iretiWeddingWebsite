@@ -1,0 +1,428 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: rgba(28, 54, 83, 0.6);
+  -webkit-text-size-adjust: 100%;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+* .hero {
+  min-height: 100vh;
+  background: url(./images/kiss.png) center center;
+  background-size: cover;
+}
+
+* .hero h2 {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  font-size: 5vw;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  background: none;
+}
+
+* .hero h2 span {
+  background: none;
+  font-size: 5vw;
+  color: #fff;
+}
+
+* .invitation {
+  margin-top: 5%;
+  text-align: center;
+  padding: 0 15px;
+}
+
+* .invitation h3 {
+  color: #3d4351;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 29px;
+}
+
+* .invitation p {
+  font-size: 15px;
+  line-height: 29px;
+  color: rgba(28, 54, 83, 0.6);
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+* .intro {
+  margin-top: 5%;
+  padding: 0 15px;
+}
+
+* .intro .intro_container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+* .intro .intro_container h3 {
+  text-align: center;
+  color: #3d4351;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 29px;
+  padding-bottom: 30px;
+}
+
+* .intro .intro_container .intro_image_text_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+* .intro .intro_container .intro_image_text_image .bride_groom_image {
+  max-width: 25%;
+  text-align: center;
+}
+
+* .intro .intro_container .intro_image_text_image .how_we_met_story {
+  max-width: 50%;
+  text-align: start;
+}
+
+* .intro .intro_container .intro_image_text_image .how_we_met_story p {
+  font-size: 15px;
+  line-height: 29px;
+  color: rgba(28, 54, 83, 0.6);
+  padding-bottom: 20px;
+}
+
+* .events {
+  margin-top: 5%;
+  padding: 0 15px;
+}
+
+* .events .events_container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+* .events .events_container h3 {
+  text-align: center;
+  color: #3d4351;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 29px;
+  padding-bottom: 30px;
+}
+
+* .events .events_container .event_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+* .events .events_container .event_row .event_date {
+  width: 50%;
+}
+
+* .events .events_container .event_row .event_date p {
+  font-size: 15px;
+  line-height: 29px;
+  color: rgba(28, 54, 83, 0.6);
+  padding-bottom: 20px;
+}
+
+* .events .events_container .event_row .event_date h5 {
+  font-size: 15px;
+  color: #3d4351;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+* .events .events_container .event_row .event_date p {
+  font-size: 15px;
+  line-height: 29px;
+  color: rgba(28, 54, 83, 0.6);
+  padding-bottom: 20px;
+}
+
+* .events .events_container .event_row .church {
+  padding-right: 100px;
+  border-right: solid 1px #e6e9ea;
+}
+
+* .events .events_container .event_row .traditional {
+  padding-left: 100px;
+}
+
+* .events .events_container .dressCode_asoebi .btn {
+  max-width: 17%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+* .events .events_container .dressCode_asoebi .btn a {
+  padding: 8px 30px;
+  font-size: 13px;
+  border: solid 2px;
+  border-radius: 40px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+* .events .events_container .dressCode_asoebi .small {
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+
+* .engagement {
+  margin-top: 5%;
+  padding: 0 15px;
+}
+
+* .engagement .engagementBx {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+* .engagement .engagementBx h3 {
+  text-align: center;
+  color: #3d4351;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 29px;
+  padding-bottom: 30px;
+}
+
+* .engagement .engagementBx .engagementImageBx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+* .engagement .engagementBx .engagementImageBx .picture {
+  width: 400px;
+}
+
+* .engagement .engagementBx .engagementImageBx .picture img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+* .BridesmaidGroomsmen {
+  margin-top: 10%;
+  padding: 0 10px;
+}
+
+* .BridesmaidGroomsmen .bridesmaidBx {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+* .BridesmaidGroomsmen .bridesmaidBx h3 {
+  text-align: center;
+  color: #3d4351;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 29px;
+  padding-bottom: 30px;
+}
+
+* .BridesmaidGroomsmen .bridesmaidBx .BridesmaidsImageBx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+* .BridesmaidGroomsmen .bridesmaidBx .BridesmaidsImageBx .BridesmaidsImageText {
+  width: 400px;
+  text-align: center;
+}
+
+* .BridesmaidGroomsmen .bridesmaidBx .BridesmaidsImageBx .BridesmaidsImageText img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+* .BridesmaidGroomsmen .groomsmenBx {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+* .BridesmaidGroomsmen .groomsmenBx h3 {
+  text-align: center;
+  color: #3d4351;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 29px;
+  padding-bottom: 30px;
+}
+
+* .BridesmaidGroomsmen .groomsmenBx .groomsmenImageBx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+* .BridesmaidGroomsmen .groomsmenBx .groomsmenImageBx .groomsmenImageText {
+  width: 400px;
+  text-align: center;
+}
+
+* .BridesmaidGroomsmen .groomsmenBx .groomsmenImageBx .groomsmenImageText img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+* .map {
+  margin-top: 5%;
+  padding: 0 15px;
+}
+
+* .map .mapBx {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+* .map .mapBx h3 {
+  text-align: center;
+  color: #3d4351;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 29px;
+  padding-bottom: 10px;
+}
+
+* .map .mapBx p {
+  text-align: center;
+  font-size: 15px;
+  line-height: 29px;
+  color: rgba(28, 54, 83, 0.6);
+  padding-bottom: 20px;
+}
+
+* .gift {
+  margin-top: 5%;
+  padding: 0 15px;
+}
+
+* .gift .giftBx {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+* .gift .giftBx h3 {
+  text-align: center;
+  color: #3d4351;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 29px;
+  padding-bottom: 10px;
+}
+
+* .gift .giftBx p {
+  text-align: center;
+  font-size: 15px;
+  line-height: 29px;
+  color: rgba(28, 54, 83, 0.6);
+  padding-bottom: 20px;
+}
+
+* .gift .giftBx b {
+  text-align: center;
+}
+
+* .gift .giftBx .giftImage {
+  width: 200px;
+  margin: 0 auto;
+}
+
+* .gift .giftBx .giftImage img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+* footer {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .events .events_container {
+    max-width: 700px;
+  }
+  .events .events_container .event_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .events .events_container .event_row .event_date {
+    width: 100%;
+  }
+  .events .events_container .event_row .church {
+    padding-right: 0;
+    padding-bottom: 10px;
+    border-right: none;
+  }
+  .events .events_container .event_row .traditional {
+    padding-left: 0;
+    padding-top: 10px;
+  }
+  .events .events_container .dressCode_asoebi .btn {
+    max-width: 28%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .events .events_container .dressCode_asoebi .small {
+    margin-top: 70px;
+    margin-bottom: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
