@@ -12,34 +12,104 @@
   -webkit-text-size-adjust: 100%;
   font-size: 14px;
   color: #333;
-  background-color: #fff;
   width: 100%;
   box-sizing: border-box;
   margin: 0;
   scroll-behavior: smooth;
+  position: relative;
 
   .hero {
     min-height: 100vh;
-    background: url(./images/kiss.png) center center;
+    background: url(./images/Proposal/photo.jpg) center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     // position: relative;
+    header {
+      .header-nav {
+        @include container;
+        margin: 0 auto;
+        background: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // border: 3px solid;
+        align-items: baseline;
+        // position: fixed;
+        // left: 0;
+        // right: 0;
+
+        .primary_nav {
+          display: inherit;
+          text-align: center;
+          align-self: center;
+          max-width: 40%;
+          li {
+            list-style: none;
+            cursor: pointer;
+            a {
+              text-decoration: none;
+              color: #fff;
+              text-transform: uppercase;
+              font-size: 13px;
+            }
+          }
+        }
+        .logo {
+          background: none;
+          max-width: 150px;
+          max-height: 110px;
+          img {
+            width: 100%;
+            cursor: pointer;
+          }
+        }
+        .toggle {
+          width: 100px;
+          height: 58px;
+          background-image: url(/images/menuu.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 50px;
+          cursor: pointer;
+          position: absolute;
+          right: 10px;
+          top: 43px;
+          display: none;
+          transition: all 300ms ease-in-out;
+        }
+
+        .toggle.active {
+          width: 100px;
+          height: 58px;
+          background-image: url(/images/closee.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 30px;
+          cursor: pointer;
+        }
+
+        header.sticky .toggle {
+          filter: invert(1);
+        }
+      }
+    }
 
     h2 {
       position: absolute;
       text-align: center;
       top: 50%;
       left: 50%;
-      font-size: 5vw;
+      font-size: 3vw;
       transform: translate(-50%, -50%);
       color: #fff;
       background: none;
       span {
         background: none;
-        font-size: 5vw;
+        font-size: 3vw;
         color: #fff;
+        align-self: center;
       }
     }
   }
@@ -81,26 +151,90 @@
         text-transform: uppercase;
         letter-spacing: 3px;
         line-height: 29px;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
       }
 
       .intro_image_text_image {
-        display: flex;
-        justify-content: space-around;
+        .introBx {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
 
-        .bride_groom_image {
-          max-width: 25%;
-          text-align: center;
-        }
-        .how_we_met_story {
-          max-width: 50%;
-          text-align: start;
           p {
+            max-width: 30%;
             font-size: 15px;
             line-height: 29px;
             color: rgba(28, 54, 83, 0.6);
-            padding-bottom: 20px;
+            align-self: center;
           }
+
+          .bride_groom_image {
+            max-width: 38%;
+            text-align: center;
+          }
+        }
+
+        .damilola {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+  .proposal {
+    margin-top: 5%;
+    padding: 0 15px;
+    .proposal_container {
+      max-width: 1300px;
+      margin: 0 auto;
+
+      h3 {
+        text-align: center;
+        color: #3d4351;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 29px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .proposal_image_text_image {
+        .proposalBx {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          p {
+            span {
+              text-align: left;
+              font-size: 20px;
+              font-family: cursive;
+            }
+            max-width: 50%;
+            font-size: 15px;
+            line-height: 29px;
+            color: rgba(28, 54, 83, 0.6);
+            padding: 0 20px;
+            b {
+              font-weight: 700;
+              font-size: 20px;
+            }
+          }
+
+          .proposal_image {
+            max-width: 38%;
+            text-align: center;
+
+            img {
+              align-self: center;
+            }
+          }
+        }
+
+        .damilola {
+          margin-top: 30px;
         }
       }
     }
@@ -108,13 +242,16 @@
 
   .events {
     margin-top: 5%;
-    padding: 0 15px;
+    padding: 25px 25px;
+    background: #efefef !important;
     .events_container {
       @include container;
       width: 100%;
       margin: 0 auto;
+      // background-color: #efefef;
 
       h3 {
+        background-color: #efefef;
         text-align: center;
         color: #3d4351;
         font-size: 18px;
@@ -130,8 +267,10 @@
 
         .event_date {
           width: 50%;
+          background: #efefef;
 
-          p {
+          strong {
+            background: #efefef;
             font-size: 15px;
             line-height: 29px;
             color: rgba(28, 54, 83, 0.6);
@@ -139,13 +278,23 @@
           }
 
           h5 {
+            background: #efefef;
             font-size: 15px;
             color: #3d4351;
             text-transform: uppercase;
             font-weight: 500;
+
+            .time {
+              background: #efefef;
+              font-size: 13px;
+              font-style: italic;
+              text-transform: lowercase;
+              color: rgba(28, 54, 83, 0.6);
+            }
           }
 
           p {
+            background-color: #efefef;
             font-size: 15px;
             line-height: 29px;
             color: rgba(28, 54, 83, 0.6);
@@ -160,10 +309,13 @@
 
         .traditional {
           padding-left: 100px;
+          background-color: #efefef;
         }
       }
       .dressCode_asoebi {
+        background-color: #efefef;
         .btn {
+          background-color: #efefef;
           max-width: 17%;
           margin: 0 auto;
           text-align: center;
@@ -177,9 +329,13 @@
             text-transform: uppercase;
           }
         }
+        .btn :hover {
+          background-color: #7a4646;
+          color: #fff;
+        }
         .small {
-          margin-top: 70px;
-          margin-bottom: 10px;
+          padding-top: 70px;
+          padding-bottom: 10px;
         }
       }
     }
@@ -215,6 +371,7 @@
           img {
             width: 100%;
             margin-top: 20px;
+            border-radius: 10px;
           }
         }
       }
@@ -223,7 +380,7 @@
 
   .BridesmaidGroomsmen {
     margin-top: 10%;
-    padding: 0 10px;
+    padding: 0 20px;
     .bridesmaidBx {
       @include container;
       width: 100%;
@@ -240,18 +397,55 @@
         padding-bottom: 30px;
       }
 
-      .BridesmaidsImageBx {
+      .bridemaidsImagesTextBx {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
+        .BridesmaidsImageBx {
+          width: 300px;
+          margin: 0 auto;
 
-        .BridesmaidsImageText {
-          width: 400px;
-          text-align: center;
+          .BridesmaidsImageText {
+            width: 300px;
+            text-align: center;
 
-          img {
-            width: 100%;
+            img {
+              width: 100%;
+              margin-top: 20px;
+              border-radius: 50%;
+              overflow: hidden;
+            }
+
+            p {
+              font-weight: 600;
+              font-size: 15px;
+              line-height: 29px;
+              color: rgba(28, 54, 83, 0.6);
+              padding-bottom: 20px;
+            }
+          }
+          .about {
+            display: none;
+          }
+
+          .BridesmaidsImageText:hover {
+            width: 300px;
             margin-top: 20px;
+            border-radius: 5%;
+            transition: 0.5s;
+
+            img {
+              border-radius: 10%;
+            }
+          }
+
+          .BridesmaidsImageText:hover + .about {
+            text-align: center;
+            display: block;
+            font-size: 15px;
+            line-height: 29px;
+            color: rgba(28, 54, 83, 0.6);
+            padding-bottom: 20px;
           }
         }
       }
@@ -273,18 +467,55 @@
         padding-bottom: 30px;
       }
 
-      .groomsmenImageBx {
+      .groomsmenImagesTextBx {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
+        .groomsmenImageBx {
+          width: 300px;
+          margin: 0 auto;
 
-        .groomsmenImageText {
-          width: 400px;
-          text-align: center;
+          .groomsmenImageText {
+            width: 300px;
+            text-align: center;
 
-          img {
-            width: 100%;
+            img {
+              width: 100%;
+              margin-top: 20px;
+              border-radius: 10%;
+              overflow: hidden;
+            }
+
+            p {
+              font-weight: 600;
+              font-size: 15px;
+              line-height: 29px;
+              color: rgba(28, 54, 83, 0.6);
+              padding-bottom: 20px;
+            }
+          }
+          .about {
+            display: none;
+          }
+
+          .groomsmenImageText:hover {
+            width: 300px;
             margin-top: 20px;
+            border-radius: 50%;
+            transition: 0.5s;
+
+            img {
+              border-radius: 10%;
+            }
+          }
+
+          .groomsmenImageText:hover + .about {
+            text-align: center;
+            display: block;
+            font-size: 15px;
+            line-height: 29px;
+            color: rgba(28, 54, 83, 0.6);
+            padding-bottom: 20px;
           }
         }
       }
@@ -294,6 +525,7 @@
   .map {
     margin-top: 5%;
     padding: 0 15px;
+    position: relative;
     .mapBx {
       @include container;
       width: 100%;
@@ -316,12 +548,47 @@
         color: rgba(28, 54, 83, 0.6);
         padding-bottom: 20px;
       }
+      .map-content {
+        position: relative;
+        background: #b5b2b2;
+        z-index: 2;
+        padding: 50px 50px;
+        max-width: 500px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+
+        .pointer {
+          display: flex;
+          .col-md-6 {
+            max-width: 300px;
+            margin: 0 auto;
+            text-align: center;
+            h5 {
+              color: #fff;
+              font-size: 15px;
+              text-transform: uppercase;
+              font-weight: 500;
+            }
+            p {
+              font-size: 15px;
+              line-height: 29px;
+              // color: rgba(28, 54, 83, 0.6);
+              padding-bottom: 20px;
+              color: #fff !important;
+              a {
+                color: #770f05;
+              }
+            }
+          }
+        }
+      }
     }
   }
 
   .gift {
     margin-top: 5%;
     padding: 0 15px;
+    background-color: #faf1f2;
     .giftBx {
       @include container;
       width: 100%;
@@ -336,7 +603,8 @@
         text-transform: uppercase;
         letter-spacing: 3px;
         line-height: 29px;
-        padding-bottom: 10px;
+        padding-top: 50px;
+        padding-bottom: 20px;
       }
       p {
         text-align: center;
@@ -347,6 +615,7 @@
       }
       b {
         text-align: center;
+        line-height: 1.7;
       }
 
       .giftImage {
@@ -357,16 +626,118 @@
           width: 100%;
           margin-top: 20px;
         }
+
+        p {
+          b {
+            color: #770f05;
+            font-size: 15px;
+            line-height: 29px;
+            padding-bottom: 20px;
+            font-weight: 700;
+          }
+        }
       }
     }
   }
 
   footer {
     text-align: center;
+    border-top: 1px solid #e6e9ea;
+    padding: 50px 0;
   }
 }
 
 @media (max-width: 1024px) {
+  .hero {
+    header {
+      .header-nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background: chocolate;
+        // position: fixed;
+        // left: 0;
+        // right: 0;
+
+        .primary_nav {
+          display: none;
+        }
+
+        .primary_nav.active {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          max-width: 100%;
+          margin-top: 100px;
+
+          li {
+            padding-top: 30px;
+            a {
+              font-size: 15px;
+            }
+          }
+        }
+        .logo {
+          // background: none;s
+          position: absolute;
+          max-width: 150px;
+          max-height: 110px;
+          img {
+            width: 100%;
+            cursor: pointer;
+          }
+        }
+
+        .two {
+          padding-bottom: 10px;
+        }
+
+        .toggle {
+          display: block;
+          transition: all 300ms ease-in-out;
+        }
+        header.sticky .toggle {
+          filter: invert(1);
+        }
+      }
+    }
+
+    h2 {
+      font-size: 25px;
+      span {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .intro {
+    .intro_container {
+      max-width: 700px;
+
+      .intro_image_text_image {
+        .introBx {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          p {
+            max-width: 100%;
+          }
+          .bride_groom_image {
+            max-width: 100%;
+          }
+        }
+
+        .damilola {
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: center;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
   .events {
     .events_container {
       max-width: 700px;
@@ -398,8 +769,8 @@
           text-align: center;
         }
         .small {
-          margin-top: 70px;
-          margin-bottom: 10px;
+          padding-top: 70px;
+          padding-bottom: 10px;
         }
       }
     }
