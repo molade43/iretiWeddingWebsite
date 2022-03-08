@@ -802,6 +802,67 @@
             justify-content: center;
     margin-top: 30px;
   }
+  .proposal {
+    margin-top: 5%;
+    padding: 0 15px;
+  }
+  .proposal .proposal_container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .proposal .proposal_container h3 {
+    text-align: center;
+    color: #3d4351;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 29px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .proposal .proposal_container .proposal_image_text_image .proposalBx {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .proposal .proposal_container .proposal_image_text_image .proposalBx p {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 29px;
+    color: rgba(28, 54, 83, 0.6);
+    padding: 0 20px;
+  }
+  .proposal .proposal_container .proposal_image_text_image .proposalBx p span {
+    text-align: left;
+    font-size: 20px;
+    font-family: cursive;
+  }
+  .proposal .proposal_container .proposal_image_text_image .proposalBx p b {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .proposal .proposal_container .proposal_image_text_image .proposalBx .proposal_image {
+    max-width: 100%;
+    text-align: center;
+  }
+  .proposal .proposal_container .proposal_image_text_image .proposalBx .proposal_image img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .proposal .proposal_container .proposal_image_text_image .damilola {
+    margin-top: 30px;
+  }
   .events .events_container {
     max-width: 700px;
   }
