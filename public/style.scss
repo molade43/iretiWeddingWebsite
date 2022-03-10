@@ -68,7 +68,7 @@
         .toggle {
           width: 100px;
           height: 58px;
-          background-image: url(/images/menuu.png);
+          background-image: url(./images/menuu.png);
           background-position: center;
           background-repeat: no-repeat;
           background-size: 50px;
@@ -83,7 +83,7 @@
         .toggle.active {
           width: 100px;
           height: 58px;
-          background-image: url(/images/closee.png);
+          background-image: url(./images/closee.png);
           background-position: center;
           background-repeat: no-repeat;
           background-size: 30px;
@@ -671,14 +671,14 @@
           margin-top: 100px;
 
           li {
-            padding-top: 30px;
+            margin-left: -20px;
+            padding: 20px 0;
             a {
               font-size: 15px;
             }
           }
         }
         .logo {
-          // background: none;s
           position: absolute;
           max-width: 150px;
           max-height: 110px;
@@ -694,7 +694,12 @@
 
         .toggle {
           display: block;
+          background-image: url(./images/closee.png) !important;
           transition: all 300ms ease-in-out;
+        }
+        .toggle.active {
+          background-image: url(./images/closee.png);
+          cursor: pointer;
         }
         header.sticky .toggle {
           filter: invert(1);
@@ -704,6 +709,7 @@
 
     h2 {
       font-size: 25px;
+      z-index: -1;
       span {
         font-size: 15px;
       }

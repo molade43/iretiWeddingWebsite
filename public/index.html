@@ -15,6 +15,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/A&M-Logo-Rose.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/A&M-Logo-Rose.png">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://www.gstatic.com/firebasejs/ui/10.0.1/firebase-ui-auth.js"></script>
     <script src="./main.js"></script>
 </head>
 <body id="top">
@@ -24,21 +25,21 @@
         <div class="header-nav">
             <ul class="primary_nav">
                 <li><a href="#intro" onclick="toggleMenu()">How we met</a></li>
-                <li><a href="#events" onclick="toggleMenu()">Our Proposal</a></li>
-                <li><a href="#instagram" onclick="toggleMenu()">Events</a></li>
+                <li><a href="#proposal" onclick="toggleMenu()">Our Proposal</a></li>
+                <li><a href="#event" onclick="toggleMenu()">Events</a></li>
             </ul>
             <div class="logo">
                 <img src="./images/test.png" alt="">
             </div>
             <ul class="primary_nav two">
                 <li>
-                    <a href="#eng-pics" onclick="toggleMenu()">Men In White</a>
+                    <a href="#groomsmen" onclick="toggleMenu()">Men In White</a>
                 </li>
                 <li>
-                    <a href="#map" class="login" onclick="toggleMenu()">Rgeistry</a>
+                    <a href="#map" class="login" onclick="toggleMenu()">Registry</a>
                 </li>
                 <li>
-                    <a href="#trai" class="btn-white btn-small" onclick="toggleMenu()">Asọẹbí Ladies</a>
+                    <a href="#bridemaids" class="btn-white btn-small" onclick="toggleMenu()">Asọẹbí Ladies</a>
                 </li>
             </ul>
             <div class="toggle" onclick="toggleMenu()"> </div>
@@ -132,7 +133,7 @@
     </div>
 </section>
 
-<section class="events " id="events">
+<section class="events " id="event">
     <div class="events_container">
             <h3 class="header">Events</h3>
         <div class="event_row">
@@ -219,103 +220,103 @@
 <section id="train" class="BridesmaidGroomsmen">
     <div class="bridesmaidBx">
         <h3 class="header">Bridesmaids</h3>
-        <div class="bridemaidsImagesTextBx">
+        <div class="bridemaidsImagesTextBx" id="bridemaids">
             <div class="BridesmaidsImageBx">
                 <div class="BridesmaidsImageText">
                     <img src="./images/Friends/Osonuga.jpeg" alt=""/>
                     <p class="text-center"> Osonuga Tina </p>
                 </div>
-                <p class="about">I am a medical Doctor and a baker.</p>
+                <p class="about">Hi, my name is Osonuga Tina and I am a medical Doctor also a baker. And i'm also Single and Searching</p>
             </div>
             <div class="BridesmaidsImageBx">
                 <div class="BridesmaidsImageText">
                     <img src="./images/Friends/Ojo Blessing (1).jpeg" alt=""/>
                     <p class="text-center"> Ojo Blessing </p>
                 </div>
-                <p class="about"> I am an entrepreneur, Lawyer and a sweet friend to Damilola and Ireti</p>
+                <p class="about">Hi, my name Ojo Blessing I am an entrepreneur, Lawyer And i'm also Single and Searching</p>
             </div>
             <div class="BridesmaidsImageBx">
                 <div class="BridesmaidsImageText">
                     <img src="./images/Friends/Grace Balogun (1).jpeg" alt=""/>
                     <p class="text-center"> Balogun Ifeoluwa </p>
                 </div>
-                <p class="about">I am a Nurse. I also sell perfumes, write and match make every other day 😂</p>
+                <p class="about">Hi, my name Balogun Ifeoluwa I am a Nurse. I also sell perfumes, write and match make every other day 😂 And i'm also Single and Searching</p>
             </div>
             <div class="BridesmaidsImageBx">
                 <div class="BridesmaidsImageText">
                     <img src="./images/Friends/Deborah Adeyeye (1).jpg" alt=""/>
                     <p class="text-center"> Deborah Adeyeye </p>
                 </div>
-                <p class="about">I am a banker/Accountant</p>
+                <p class="about">Hi, my name Deborah Adeyeye I am a banker/Accountant And i'm also Single and Searching</p>
             </div>
             <div class="BridesmaidsImageBx">
                 <div class="BridesmaidsImageText">
-                    <img src="./images/Friends/Adebowale.jpeg" alt=""/>
+                    <img src="./images/Friends/Adebowale Toluwanimi replace.jpg" alt=""/>
                     <p class="text-center"> Adebowale Toluwanimi </p>
                 </div>
-                <p class="about">I am a 400l pharmacy student and i sell beddings</p>
+                <p class="about">Hi, my name Adebowale Toluwanimi, I am a 400l pharmacy student and i sell beddings. I'm also Single and Searching</p>
             </div>
             <div class="BridesmaidsImageBx">
                 <div class="BridesmaidsImageText">
-                    <img src="./images/Friends/Tiwanijesu.jpeg" alt=""/>
+                    <img src="./images/Friends/Tiwanijesu (2).jpeg" alt=""/>
                     <p class="text-center"> Oyemosu Tiwanijesu </p>
                 </div>
-                <p class="about">I am a Teacher, Writer, and an Entrepreneur</p>
+                <p class="about">Hi, my name Oyemosu Tiwanijesu I am a Teacher, Writer, and an Entrepreneur. I'm also Single and Searching</p>
             </div>
             <div class="BridesmaidsImageBx">
                 <div class="BridesmaidsImageText">
                     <img src="./images/Friends/Toyin Oladeji (1).jpeg" alt=""/>
                     <p class="text-center"> Oladeji OluwaToyin </p>
                 </div>
-                <p class="about"> I am a Nutritionist and a fashion designer</p>
+                <p class="about">Hi, my name Oladeji OluwaToyin I am a Nutritionist and a fashion designer. I'm also Single and Searching</p>
             </div>
             <div class="BridesmaidsImageBx">
                 <div class="BridesmaidsImageText">
                     <img src="./images/Friends/Tomi Olaoye (1).jpg" alt=""/>
                     <p class="text-center"> Oluwatomi Olaoye </p>
                 </div>
-                <p class="about">I am a Web Designer, Graphic enthusiast, Data analysis</p>
+                <p class="about">Hi, my name Oluwatomi Olaoye I am a Web Designer, Graphic enthusiast, Data analysis And i'm not Single but engaged to Omolade</p>
             </div>
             <div class="BridesmaidsImageBx">
                 <div class="BridesmaidsImageText">
                     <img src="./images/Friends/Adekoya Boluwatife (1).jpeg" alt=""/>
                     <p class="text-center"> Adekoya Boluwatife </p>
                 </div>
-                <p class="about"></p>
+                <p class="about">Hi, my name Adekoya Boluwatife. I'm also Single and Searching</p>
             </div>
             <div class="BridesmaidsImageBx">
                 <div class="BridesmaidsImageText">
                     <img src="./images/Friends/Shona Bisayo (1).jpg" alt=""/>
                     <p class="text-center"> Shona Bisayo </p>
                 </div>
-                <p class="about"> I am an Accountant, Auditor, and Entrepreneur</p>
+                <p class="about">Hi, my name Shona Bisayo I am an Accountant, Auditor, and Entrepreneur. I'm also Single and Searching</p>
             </div>
             <div class="BridesmaidsImageBx">
                 <div class="BridesmaidsImageText">
                     <img src="./images/Friends/mariam.jpeg" alt=""/>
                     <p class="text-center"> Mariam Jamiu </p>
                 </div>
-                <p class="about">I am a Microbiologist, also a customer care representative</p>
+                <p class="about">Hi, my nameI am a Microbiologist, also a customer care representative and I'm also Single and Searching</p>
             </div>
             <div class="BridesmaidsImageBx">
                 <div class="BridesmaidsImageText">
                     <img src="./images/Friends/Adegbite Ayomide (1).jpeg" alt=""/>
                     <p class="text-center"> Adegbite Ayomide </p>
                 </div>
-                <p class="about">i am an Accountant</p>
+                <p class="about">Hi, my name i am an Accountant and I'm also Single and Searching</p>
             </div>
             <div class="BridesmaidsImageBx">
                 <div class="BridesmaidsImageText">
                     <img src="./images/Friends/Deborah Abel (1).jpeg" alt=""/>
                     <p class="text-center"> Abel Deborah </p>
                 </div>
-                <p class="about">I am a registered Nurse and also a Make up artist</p>
+                <p class="about">Hi, my name Abel Deborah, I am a registered Nurse and also a Make up artist and I'm also Single and Searching</p>
             </div>
         </div>
         
     </div>
 
-    <div class="groomsmenBx">
+    <div class="groomsmenBx" id="groomsmen">
         <h3 class="header">Groomsmen</h3>
         <div class="groomsmenImagesTextBx">
             <div class="groomsmenImageBx">
@@ -327,7 +328,7 @@
             </div>
             <div class="groomsmenImageBx">
                 <div class="groomsmenImageText">
-                    <img src="./images/Friends/new ireti friend.jpeg" alt=""/>
+                    <img src="./images/Friends/new ireti friend (2).jpeg" alt=""/>
                     <p class="text-center"> Osonuga Tina </p>
                 </div>
                 <p class="about">I am a medical Doctor and a baker.</p>
@@ -368,23 +369,12 @@
                             <p> Chapel of Praise, McPherson University, Seriki Sotayo, Ogun state. </p>
                         </div>
                         <div class="col-md-6">
-                            <h5>Oluwatomi or Omolade</h5>
-                            <p><a href="tel://+2348105660037">+234 7069171439</a>
+                            <h5>Demilade Adebowale or Tomi Oyekan</h5>
+                            <p><a href="tel://+2349063937196">+234 9063937196</a>
                             <br>
-                             <a href="tel://+2347037418777">+234 8051930887</a>
+                             <a href="tel://+2348075765772">+234 8075765772</a>
                             </p>
                         </div>
-                    <!-- <div class="row text-center">
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"
-                               href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Ronnie%20Dee%20Event%20Centre%22%2C%22addressLine2%22%3A%2267%20Iju%20Rd%2C%20opp.%20AP%20filling%20station%2C%20Pen-Cinema%2C%20Ojokoro&dropoff[latitude]=6.6322823&dropoff[longitude]=3.3227171"><i
-                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
-                        </div>
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
-                                map</a>
-                        </div>
-                    </div> -->
             </div>
         </div>
     </div>
@@ -410,6 +400,21 @@
             <p><b>Thank You</b></p>
         </div>
     </div>
+</section>
+
+<section class="wishes">
+    <input type="text" name="commentBx" id="" placeholder="Add a Wish">
+    <button id="addComment" onclick="add_comment()" type="submit"></button>
+
+    <!-- <div class="wish_container">
+        <div class="wish_data">
+            <p id="wish"> Wish 12345</p>
+        </div>
+        <div class="wish_tool">
+            <button id="wish_edit_button" onclick="wish_edit">Edit</button>
+            <button id="wish_delete_button" onclick="wish_delete">Delete</button>
+        </div>
+    </div> -->
 </section>
 
 <footer>
